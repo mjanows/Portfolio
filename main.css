@@ -1,3 +1,63 @@
 body {
-    background-color: black;
+    background-color: hsl(0,0%,15%);
+    color:white;
+    font-size: 24;
+    font-family: 'Poppins',
+    sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+#logo {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.8em;
+}
+
+header a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+main {
+    text-align: left;
+    height: 90vh;
+    padding: 10%;
+    font-size: 2em;
+}
+
+main p {
+    color: hsl(0, 0%, 50%);
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+main h1 { 
+    padding: 0;
+    margin: 0;
+}
+
+
+#hello {
+    color:pink;  
+}
+
+#about {
+
+}
+
+#about {
+    display: block;
+}
+
+img {
+    transform: rotate(270deg);
+    height: 50vh;
 }
