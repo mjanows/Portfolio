@@ -19,25 +19,32 @@ header {
     display: flex;
     justify-content: space-between;
     font-size: 1.2em;
-    padding: 20px;
+    padding: 20px;    
 }
 
 #logo {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 0.8em;
+    font-size: 0.9em;
+}
+
+nav {
+    word-spacing: 2em;
+    font-weight: bold;
+    margin-right: 3em;
 }
 
 header a {
     color: inherit;
     text-decoration: inherit;
+    font-style: bold;
 }
 
 main {
     text-align: left;
-    height: 90vh;
-    padding: 10%;
+    height: 90%;
+    padding: 20% 10%;
     font-size: 2em;
 }
 
@@ -50,22 +57,39 @@ main p {
 main h1 { 
     padding: 0;
     margin: 0;
+    letter-spacing: 0.05em;
+    line-height: 1em;
 }
-
 
 #hello {
     color: var(--font-fancy);  
 }
 
-#about {
-
+div#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-column-gap: 2em;
+    padding: 10%;
 }
 
-#about {
-    display: block;
+div#about div.header {
+    text-align: center;
+    font-size: 1.5em;
 }
 
-img {
-    transform: rotate(270deg);
-    height: 50vh;
+div.about div.info {
+}
+
+div#about div.img {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div#about div.img img {
+    max-height: 600px;
+    justify-items: right;
 }
