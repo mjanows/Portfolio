@@ -34,6 +34,11 @@ header {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#logo:hover {
+    color: var(--font-fancy);
 }
 
 nav {
@@ -46,6 +51,30 @@ header a {
     color: inherit;
     text-decoration: inherit;
     font-style: bold;
+}
+.box {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+}
+
+.box .underline::after {
+    top: 100%;
+    height: 2px;
+    width: 0%;
+    left: -5%;
+    background-color: var(--font-fancy);
+    transition: 0.3s ease all .3s;
+}
+
+.box:hover .underline::after {
+    width: 110%;
+    transition: 0.3s ease all;
 }
 
 main {
