@@ -98,8 +98,34 @@ main h1 {
     line-height: 1em;
 }
 
-#hello {
-    color: var(--font-fancy);  
+main h1 #hello {
+    opacity: 0;
+    color: var(--font-fancy);
+    animation: appear;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+main h1 #name{
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+main p#desc {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@Keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 div#about {
