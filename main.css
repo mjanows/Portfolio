@@ -1,9 +1,11 @@
 :root {
     --background-color: hsl(0, 0%, 15%);
     --header-background-color: hsla(0, 0%, 15%, 90%);
+    --footer-background-color: hsl(0, 0%, 10%);
     --primary-font-color: hsl(0, 0%, 90%);
     --secondary-font-color: hsl(0, 0%, 50%);
     --font-fancy: pink;
+    --gmail-color: #DC4D41;
 }
 
 body {
@@ -80,14 +82,13 @@ cursor: pointer;
 main {
     text-align: left;
     height: 90%;
-    padding: 20% 10%;
+    padding: 10em 10%;
     font-size: 2em;
 }
 
 main p {
     color: var(--secondary-font-color);
     font-size: 0.8em;
-    font-style: italic;
 }
 
 main h1 { 
@@ -115,6 +116,8 @@ div#about div.header {
 }
 
 div.about div.info {
+    padding: 0 0 0 1em;
+    border-left: 1px solid var(--font-fancy);
 }
 
 div#about div.img {
@@ -128,4 +131,62 @@ div#about div.img {
 div#about div.img img {
     max-height: 600px;
     justify-items: right;
+}
+
+div#about div.img img:hover{
+}
+
+@media only screen and (max-width: 1200px) {
+    div#about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.about div.info {
+        order: 1;
+    }
+}
+div#contact {
+    padding: 5%;
+}
+
+div#contact div.contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+div#contact div.contact h2 {
+    font-size: 2em;
+}
+
+div#contact div.medias{
+    display: flex;
+    justify-content: center;
+    padding: 5em auto 3em auto;
+    text-align: center;  
+}
+
+#contact .medias a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.media {
+    padding: 3em;
+    margin: 0 3em;
+}
+.media .fa {
+    font-size: 3em;
+    padding: 0 1em 1em 1em;
+}
+.contact .medias .media .plugin {
+    padding-bottom: 1em;
+}
+
+.medias .media:hover {
+    color: var(--font-fancy);
+    border: 1px solid var(--font-fancy);
+    -webkit-border-radius: 1em;
 }
