@@ -226,28 +226,19 @@ footer p#quote{
     color: var(--primary-font-color);
 }
 
-@media (max-width: 1000px) {
-    header{
-        display: block;
-        text-align: center;
-        padding-left: 0;
-        padding-right: 0;
+@media (max-width: 1600px) {
+    div#contact div.medias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 2em;
     }
+}
 
-    header.sticky nav{ 
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header.sticky nav div.box{
-        width: 33%;
-        margin: 0.2em;
-    }
+@media (max-width: 1250px) { 
 
     div#contact div.medias {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -272,8 +263,25 @@ footer p#quote{
         padding: 5%;
     }
 
-    #contact div.medias div.media .mail {
-        position: absolute;
-        right: 15%;
+    @media (max-width: 1000px){
+          header {
+              display: block;
+              text-align: center;
+              padding-left: 0;
+              padding-right: 0;
+          }
+
+          header.sticky nav {
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+          }
+
+          header.sticky nav div.box {
+              width: 33%;
+              margin: 0.2em;
+          }
     }
 }
