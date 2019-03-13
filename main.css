@@ -54,6 +54,7 @@ header a {
     text-decoration: inherit;
     font-style: bold;
 }
+
 .box {
 position: relative;
 display: inline-block;
@@ -159,9 +160,6 @@ div#about div.img img {
     justify-items: right;
 }
 
-div#about div.img img:hover{
-}
-
 @media only screen and (max-width: 1200px) {
     div#about {
         display: flex;
@@ -207,6 +205,7 @@ div#contact div.medias{
     font-size: 3em;
     padding: 0 1em 1em 1em;
 }
+
 .contact .medias .media .plugin {
     padding-bottom: 1em;
 }
@@ -219,14 +218,15 @@ div#contact div.medias{
 
 footer {
     padding: 0 0 1em 0;
-    background-color: var(--footer-background-color);
 }
+
 footer p{
     text-align: center;
     font-size: 0.7em;
     line-height: 0.5em;
     color: var(--secondary-font-color);
 }
+
 footer p#quote{
     font-size: 1.5em;
     line-height: 1em;
@@ -239,5 +239,4 @@ footer p#quote{
     div#contact div.medias {
         display: block;
     }
-
 }
