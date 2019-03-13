@@ -272,4 +272,8 @@ footer p#quote{
         padding: 5%;
     }
 
+    #contact div.medias div.media .mail {
+        position: absolute;
+        right: 15%;
+    }
 }
