@@ -19,10 +19,12 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 1.2em;
     padding: 20px;    
     background: var(--header-background-color);
+    z-index: 1;
 }
 
 .sticky {
@@ -157,20 +159,8 @@ div#about div.img {
 
 div#about div.img img {
     max-height: 600px;
-    justify-items: right;
 }
 
-@media only screen and (max-width: 1200px) {
-    div#about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div.about div.info {
-        order: 1;
-    }
-}
 div#contact {
     padding: 5%;
 }
@@ -190,6 +180,7 @@ div#contact div.medias{
     justify-content: center;
     padding: 5em auto 3em auto;
     text-align: center;  
+    flex-wrap: wrap;
 }
 
 #contact .medias a {
@@ -235,8 +226,50 @@ footer p#quote{
     color: var(--primary-font-color);
 }
 
-@media only screen and (max-width: 1000px){
-    div#contact div.medias {
+@media (max-width: 1000px) {
+    header{
         display: block;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
     }
+
+    header.sticky nav{ 
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header.sticky nav div.box{
+        width: 33%;
+        margin: 0.2em;
+    }
+
+    div#contact div.medias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#contact div.medias div.media {
+        margin: 1em;
+        width: 50%;
+    }
+
+    div#about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+    }
+
+    div.about div.info {
+        order: 1;
+    }
+
+    div#about div.img{
+        padding: 5%;
+    }
+
 }
